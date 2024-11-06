@@ -1,0 +1,9 @@
+<!ELEMENT ONTAP (Presentation)>
+<!ELEMENT Presentation (Slide+)>
+<!ELEMENT Slide (Title, Image, Text, Advantage*)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Image EMPTY>
+<!ATTLIST Image src CDATA #REQUIRED
+                 alt CDATA #REQUIRED>
+<!ELEMENT Text (#PCDATA)>
+<!ELEMENT Advantage (#PCDATA)>
